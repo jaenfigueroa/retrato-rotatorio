@@ -1,14 +1,31 @@
-#elemento {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: var(--principal-font);
+}
+html {
+  font-size: 62.5%; /* PARA USAR -> 1rem = 10px */
+}
+ul,
+ol {
+  list-style: none;
+}
+/*/////////////////////////*/
+
+#X55 {
   background-color: crimson;
   width: 200px;
   height: 200px;
+  border-radius: 10px;
 
-  position: absolute;
+  position: relative;
 }
-#tablero {
+#lugarX55 {
   background-color: aquamarine;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   margin-top: 40px;
   border: 4px solid black;
   border-radius: 10px;
@@ -20,6 +37,25 @@
   margin-top: 40px;
   border: 4px solid black;
   border-radius: 10px;
+}
 
-  /* position: relative; */
+#texto {
+  background-color: blueviolet;
+  color: white;
+  font-size: 3rem;
+  font-family: sans-serif;
+  display: inline;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+#main {
+  background-color: darkorange;
+  background-color: fuchsia;
+  width: 100vw;
+  height: 100vh;
 }
