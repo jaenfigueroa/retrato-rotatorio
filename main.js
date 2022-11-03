@@ -20,7 +20,8 @@ window.addEventListener('mouseup', () => {
 function girar(evento) {
   //obtener la coordenada x de puntero de mouse
   let X = evento.clientX
+  let Y = evento.clientY
 
   //rotar el mundo
-  mundo3D.style.transform = `rotateX(-15deg) rotateY(${X}deg) rotateZ(0deg)`
+  mundo3D.style.transform = `rotateX(-${Y}deg) rotateY(${X / 2}deg) rotateZ(0deg)`
 }
