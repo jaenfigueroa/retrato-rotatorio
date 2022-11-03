@@ -27,7 +27,7 @@ main {
   justify-content: center;
 }
 
-#mundo {
+#mundo3D {
   /* background-color: rgba(54, 54, 54, 0.433); */
   /* border: 2px solid black; */
   width: 200px;
@@ -56,7 +56,7 @@ main {
   font-size: 7rem;
 }
 
-#cara {
+#retrato {
   background-color: rgba(255, 0, 0, 0.475);
   width: 200px;
   height: 200px;

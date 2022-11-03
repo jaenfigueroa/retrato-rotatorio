@@ -1,6 +1,6 @@
-const mundo = document.getElementById('mundo')
+const mundo3D = document.getElementById('mundo3D')
 ////////////////////////////////////////////////////////
-let anchoElemento = mundo.getBoundingClientRect().width
+let anchoElemento = mundo3D.getBoundingClientRect().width
 let X = 0
 let moverX = 0
 
@@ -22,5 +22,5 @@ function girar(evento) {
   let X = evento.clientX
 
   //rotar el mundo
-  mundo.style.transform = `rotateX(-15deg) rotateY(${X}deg) rotateZ(0deg)`
+  mundo3D.style.transform = `rotateX(-15deg) rotateY(${X}deg) rotateZ(0deg)`
 }
