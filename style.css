@@ -13,17 +13,17 @@ ol {
   list-style: none;
 }
 
-/*/////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+main {
+  background-color: rgb(255, 204, 255);
+  width: 100vw;
+  height: 100vh;
+}
+
 #elemento {
   background-color: rgb(67, 20, 220);
   width: 200px;
   height: 200px;
   border-radius: 10px;
   position: relative;
-}
-
-#main {
-  background-color: rgb(255, 204, 255);
-  width: 100vw;
-  height: 100vh;
 }
