@@ -1,7 +1,7 @@
 ## 🔗 Preview
 
-<!-- ![App Screenshot](./assets/captura.png) -->
+![App Screenshot](./assets/retrato1.gif)
 
 ## 🔗 Website
 
-<!-- url -->
+https://jaenfigueroa.github.io/espejo-rotatorio
