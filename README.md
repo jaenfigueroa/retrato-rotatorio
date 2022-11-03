@@ -1,7 +1,7 @@
-# <div align="center">touchstart, touchmove, touchend 🚀</div>
+## 🔗 Preview
 
-# <div align="center">colisiones🚀</div>
+<!-- ![App Screenshot](./assets/captura.png) -->
 
-## 🔗 Vista previa en Desktop
+## 🔗 Website
 
-![App Screenshot](./assets/captura.png)
+<!-- url -->

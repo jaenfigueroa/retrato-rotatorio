@@ -1,15 +1,26 @@
-const elemento = document.getElementById('elemento')
+const mundo = document.getElementById('mundo')
 ////////////////////////////////////////////////////////
+let anchoElemento = mundo.getBoundingClientRect().width
+let X = 0
+let moverX = 0
 
-elemento.addEventListener('touchmove', (evento) => {
-
-  let anchoElemento = elemento.getBoundingClientRect().width
-
-  /* COORDENADAS DEL ELEMENTO*/
-  let elementoX = evento.targetTouches[0].pageX
-  let elementoY = evento.targetTouches[0].pageY
-
-  /* MOVERLO DE LUGAR */
-  elemento.style.left = elementoX - anchoElemento / 2 + 'px'
-  elemento.style.top = elementoY - anchoElemento / 2 + 'px'
+///SE HACE CLICK /////////////////////////////////////////
+window.addEventListener('mousedown', () => {
+  // console.log('se hizo click');
+  window.addEventListener('mousemove', girar)
 })
+
+///SE DEJA DE HACER CLICK ////////////////////////////////
+window.addEventListener('mouseup', () => {
+  // console.log('se dejo de hacer click');
+  removeEventListener('mousemove', girar)
+})
+
+//GIRAR //////////////////////////////////////////////////
+function girar(evento) {
+  //obtener la coordenada x de puntero de mouse
+  let X = evento.clientX
+
+  //rotar el mundo
+  mundo.style.transform = `rotateX(-15deg) rotateY(${X}deg) rotateZ(0deg)`
+}
