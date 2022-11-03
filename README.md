@@ -6,4 +6,4 @@
 
 ### Website
 
-https://jaenfigueroa.github.io/espejo-rotatorio
+https://jaenfigueroa.github.io/retrato-rotatorio
