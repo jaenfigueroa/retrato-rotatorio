@@ -1,27 +1,25 @@
 const mundo3D = document.getElementById('mundo3D')
-////////////////////////////////////////////////////////
-let anchoElemento = mundo3D.getBoundingClientRect().width
-let X = 0
-let moverX = 0
 
-///SE HACE CLICK /////////////////////////////////////////
+///CUANDO SE HACE CLICK //////////////////////////////////
 window.addEventListener('mousedown', () => {
-  // console.log('se hizo click');
   window.addEventListener('mousemove', girar)
 })
 
-///SE DEJA DE HACER CLICK ////////////////////////////////
+///CUANDO SE DEJA DE HACER CLICK /////////////////////////
 window.addEventListener('mouseup', () => {
-  // console.log('se dejo de hacer click');
   removeEventListener('mousemove', girar)
 })
 
-//GIRAR //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+//ROTAR EL MUNDO3D ///////////////////////////////////////
 function girar(evento) {
-  //obtener la coordenada x de puntero de mouse
+  //obtener la coordenada X y Y de la flecha de mouse
   let X = evento.clientX
   let Y = evento.clientY
 
-  //rotar el mundo
-  mundo3D.style.transform = `rotateX(-${Y}deg) rotateY(${X / 2}deg) rotateZ(0deg)`
+  //aginarle esos valores y rotar
+  mundo3D.style.transform = `rotateX(-${Y}deg) rotateY(${X}deg)`
 }
+
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////

@@ -29,12 +29,12 @@ main {
 
 #mundo3D {
   /* background-color: rgba(54, 54, 54, 0.433); */
-  /* border: 2px solid black; */
+  /* border: 1px solid black; */
   width: 200px;
   height: 200px;
 
   transform-style: preserve-3d;
-  transform: rotateX(-15deg) rotateY(50deg) rotateZ(0deg);
+  transform: rotateX(-15deg) rotateY(50deg);
 }
 
 #piso {
@@ -57,7 +57,7 @@ main {
 }
 
 #retrato {
-  background-color: rgba(255, 0, 0, 0.475);
+  background-color: rgb(85, 85, 85);
   width: 200px;
   height: 200px;
   position: absolute;
@@ -65,13 +65,12 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 7rem;
-  transform: rotateX(270deg) translateY(-100px);
-
   background-image: url("https://media.istockphoto.com/photos/tabby-cat-and-border-collie-dog-picture-id1306543850?b=1&k=20&m=1306543850&s=612x612&w=0&h=SwXVpHjBtfYRY0rnQjgIsP-ftwWJq54_j2Zcgu9bBmY=");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid rgb(0, 0, 0);
   border-radius: 50%;
   opacity: 100%;
+  border: 1px solid black;
+  transform: rotateX(270deg) translateY(-100px);
 }
